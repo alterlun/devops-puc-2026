@@ -8,6 +8,6 @@ dados = {
 
 df = pd.DataFrame(dados)
 
-print("--- Relatório de Vendas ---")
+print("--- Relatório de Vendas V2 ---")
 print(df)
 print("\nMédia de produtos no estoque:", df['Quantidade'].mean())
