@@ -1,0 +1,15 @@
+name: Inspetor de Dados
+on: [push, pull_request]
+jobs:
+  verificacao:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prepara o Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Instala Pandas
+        run: pip install pandas
+      - name: Executa a Análise
+        run: python main.py
